@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessible Interactive Photo Gallery</title>
+    <link rel="stylesheet" href="css/gallery.css">
+    <script src="js/gallery.js"></script>
+</head>
+<body onload="addTabFocus()">
+    <main>
+        <h1>My Accessible Photo Gallery</h1>
+        
+        <div id="image">
+            Hover over or tab through an image below to display here.
+        </div>
+
+        <div class="gallery-grid">
+            <img class="preview" 
+                 alt="Golden sunrise shining over misty mountain peaks" 
+                 src="images/pic1.jpg" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 alt="Calm turquoise ocean waves touching a sandy beach" 
+                 src="images/pic2.jpg" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 alt="Sunlit pathway winding through a dense green autumn forest" 
+                 src="images/pic3.jpg" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 alt="Vibrant city skyline reflecting on a river at twilight" 
+                 src="images/pic4.jpg" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 alt="Close-up of blooming cherry blossoms against a clear blue sky" 
+                 src="images/pic5.jpg" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+
+            <img class="preview" 
+                 alt="Starry night sky glowing above a quiet desert landscape" 
+                 src="images/pic6.jpg" 
+                 onmouseover="upDate(this)" 
+                 onmouseleave="unDo()" 
+                 onfocus="upDate(this)" 
+                 onblur="unDo()">
+        </div>
+    </main>
+</body>
+</html>
